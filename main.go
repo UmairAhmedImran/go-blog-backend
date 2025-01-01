@@ -4,10 +4,13 @@ import (
 	"fmt"
 	"os"
 	"log"
+	"github.com/joho/godotenv"
 )
 
 func main() {
 	fmt.Println("Hello World")
+
+	godotenv.Load()
 
 	portString := os.Getenv("PORT")
 
